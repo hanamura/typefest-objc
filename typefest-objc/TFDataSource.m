@@ -1,6 +1,4 @@
 #import "TFDataSource.h"
-#import "TFSection.h"
-#import "TFRow.h"
 
 @implementation TFDataSource
 
@@ -77,9 +75,14 @@
 	return nil;
 }
 
-- (id)firstSection
+- (TFSection *)firstSection
 {
     return [self objectAtIndex:0];
+}
+
+- (TFSection *)lastSection
+{
+    return [self lastObject];
 }
 
 - (NSString *)titleForHeaderInSection:(NSUInteger)section

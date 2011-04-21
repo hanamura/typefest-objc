@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "TFActiveArray.h"
+#import "TFSection.h"
+#import "TFRow.h"
 
 @interface TFDataSource : TFActiveArray <UITableViewDataSource, UITableViewDelegate>
 {
@@ -9,19 +11,20 @@
     BOOL _autoAnimate;
 }
 
++ (id)dataSource;
++ (id)dataSourceWithTableView:(UITableView *)tableView;
+
 @property (nonatomic, retain) UITableView *tableView;
 @property (assign) UITableViewRowAnimation sectionAnimation;
 @property (assign) UITableViewRowAnimation rowAnimation;
 @property (assign) BOOL autoAnimate;
 
-+ (id)dataSource;
-+ (id)dataSourceWithTableView:(UITableView *)tableView;
-
 - (id)initWithTableView:(UITableView *)tableView;
 
 - (id)objectAtIndexPath:(NSIndexPath *)indexPath;
 - (NSIndexPath *)indexPathForObject:(id)anObject;
-- (id)firstSection;
+- (TFSection *)firstSection;
+- (TFSection *)lastSection;
 - (NSString *)titleForHeaderInSection:(NSUInteger)section;
 - (NSString *)titleForFooterInSection:(NSUInteger)section;
 
