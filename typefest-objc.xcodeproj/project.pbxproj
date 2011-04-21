@@ -15,6 +15,28 @@
 		9F57DCA9136038E500E96DE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F57DCA7136038E500E96DE0 /* InfoPlist.strings */; };
 		9F57DCAC136038E500E96DE0 /* typefest_objcTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9F57DCAB136038E500E96DE0 /* typefest_objcTests.h */; };
 		9F57DCAE136038E500E96DE0 /* typefest_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCAD136038E500E96DE0 /* typefest_objcTests.m */; };
+		9F57DCE01360398300E96DE0 /* TFActiveArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCD41360398300E96DE0 /* TFActiveArray.h */; };
+		9F57DCE11360398300E96DE0 /* TFActiveArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCD51360398300E96DE0 /* TFActiveArray.m */; };
+		9F57DCE21360398300E96DE0 /* TFActiveCollectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCD61360398300E96DE0 /* TFActiveCollectionDelegate.h */; };
+		9F57DCE31360398300E96DE0 /* TFActiveCollectionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCD71360398300E96DE0 /* TFActiveCollectionInfo.h */; };
+		9F57DCE41360398300E96DE0 /* TFActiveCollectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCD81360398300E96DE0 /* TFActiveCollectionInfo.m */; };
+		9F57DCE51360398300E96DE0 /* TFActiveCollectionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCD91360398300E96DE0 /* TFActiveCollectionProtocol.h */; };
+		9F57DCE61360398300E96DE0 /* TFActiveCollectionUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCDA1360398300E96DE0 /* TFActiveCollectionUtils.h */; };
+		9F57DCE71360398300E96DE0 /* TFActiveCollectionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCDB1360398300E96DE0 /* TFActiveCollectionUtils.m */; };
+		9F57DCE81360398300E96DE0 /* TFActiveDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCDC1360398300E96DE0 /* TFActiveDictionary.h */; };
+		9F57DCE91360398300E96DE0 /* TFActiveDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCDD1360398300E96DE0 /* TFActiveDictionary.m */; };
+		9F57DCEA1360398300E96DE0 /* TFActiveSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCDE1360398300E96DE0 /* TFActiveSet.h */; };
+		9F57DCEB1360398300E96DE0 /* TFActiveSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCDF1360398300E96DE0 /* TFActiveSet.m */; };
+		9F57DCF61360398D00E96DE0 /* TFDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCEC1360398D00E96DE0 /* TFDataSource.h */; };
+		9F57DCF71360398D00E96DE0 /* TFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCED1360398D00E96DE0 /* TFDataSource.m */; };
+		9F57DCF81360398D00E96DE0 /* TFRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCEE1360398D00E96DE0 /* TFRow.h */; };
+		9F57DCF91360398D00E96DE0 /* TFRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCEF1360398D00E96DE0 /* TFRow.m */; };
+		9F57DCFA1360398D00E96DE0 /* TFSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCF01360398D00E96DE0 /* TFSection.h */; };
+		9F57DCFB1360398D00E96DE0 /* TFSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCF11360398D00E96DE0 /* TFSection.m */; };
+		9F57DCFC1360398D00E96DE0 /* TFSelectableRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCF21360398D00E96DE0 /* TFSelectableRow.h */; };
+		9F57DCFD1360398D00E96DE0 /* TFSelectableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCF31360398D00E96DE0 /* TFSelectableRow.m */; };
+		9F57DCFE1360398D00E96DE0 /* TFSelectionGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCF41360398D00E96DE0 /* TFSelectionGroup.h */; };
+		9F57DCFF1360398D00E96DE0 /* TFSelectionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCF51360398D00E96DE0 /* TFSelectionGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,15 +52,37 @@
 /* Begin PBXFileReference section */
 		9F57DC8E136038E500E96DE0 /* libtypefest-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libtypefest-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F57DC91136038E500E96DE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9F57DC95136038E500E96DE0 /* typefest-objc-Prefix.pch */ = {isa = PBXFileReference; path = "typefest-objc-Prefix.pch"; sourceTree = "<group>"; };
+		9F57DC95136038E500E96DE0 /* typefest-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "typefest-objc-Prefix.pch"; sourceTree = "<group>"; };
 		9F57DC9B136038E500E96DE0 /* typefest-objcTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "typefest-objcTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F57DC9C136038E500E96DE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F57DC9F136038E500E96DE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9F57DCA6136038E500E96DE0 /* typefest-objcTests-Info.plist */ = {isa = PBXFileReference; path = "typefest-objcTests-Info.plist"; sourceTree = "<group>"; };
+		9F57DCA6136038E500E96DE0 /* typefest-objcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "typefest-objcTests-Info.plist"; sourceTree = "<group>"; };
 		9F57DCA8136038E500E96DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9F57DCAA136038E500E96DE0 /* typefest-objcTests-Prefix.pch */ = {isa = PBXFileReference; path = "typefest-objcTests-Prefix.pch"; sourceTree = "<group>"; };
+		9F57DCAA136038E500E96DE0 /* typefest-objcTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "typefest-objcTests-Prefix.pch"; sourceTree = "<group>"; };
 		9F57DCAB136038E500E96DE0 /* typefest_objcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = typefest_objcTests.h; sourceTree = "<group>"; };
 		9F57DCAD136038E500E96DE0 /* typefest_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = typefest_objcTests.m; sourceTree = "<group>"; };
+		9F57DCD41360398300E96DE0 /* TFActiveArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFActiveArray.h; sourceTree = "<group>"; };
+		9F57DCD51360398300E96DE0 /* TFActiveArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFActiveArray.m; sourceTree = "<group>"; };
+		9F57DCD61360398300E96DE0 /* TFActiveCollectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFActiveCollectionDelegate.h; sourceTree = "<group>"; };
+		9F57DCD71360398300E96DE0 /* TFActiveCollectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFActiveCollectionInfo.h; sourceTree = "<group>"; };
+		9F57DCD81360398300E96DE0 /* TFActiveCollectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFActiveCollectionInfo.m; sourceTree = "<group>"; };
+		9F57DCD91360398300E96DE0 /* TFActiveCollectionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFActiveCollectionProtocol.h; sourceTree = "<group>"; };
+		9F57DCDA1360398300E96DE0 /* TFActiveCollectionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFActiveCollectionUtils.h; sourceTree = "<group>"; };
+		9F57DCDB1360398300E96DE0 /* TFActiveCollectionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFActiveCollectionUtils.m; sourceTree = "<group>"; };
+		9F57DCDC1360398300E96DE0 /* TFActiveDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFActiveDictionary.h; sourceTree = "<group>"; };
+		9F57DCDD1360398300E96DE0 /* TFActiveDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFActiveDictionary.m; sourceTree = "<group>"; };
+		9F57DCDE1360398300E96DE0 /* TFActiveSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFActiveSet.h; sourceTree = "<group>"; };
+		9F57DCDF1360398300E96DE0 /* TFActiveSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFActiveSet.m; sourceTree = "<group>"; };
+		9F57DCEC1360398D00E96DE0 /* TFDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDataSource.h; sourceTree = "<group>"; };
+		9F57DCED1360398D00E96DE0 /* TFDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFDataSource.m; sourceTree = "<group>"; };
+		9F57DCEE1360398D00E96DE0 /* TFRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRow.h; sourceTree = "<group>"; };
+		9F57DCEF1360398D00E96DE0 /* TFRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRow.m; sourceTree = "<group>"; };
+		9F57DCF01360398D00E96DE0 /* TFSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSection.h; sourceTree = "<group>"; };
+		9F57DCF11360398D00E96DE0 /* TFSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSection.m; sourceTree = "<group>"; };
+		9F57DCF21360398D00E96DE0 /* TFSelectableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSelectableRow.h; sourceTree = "<group>"; };
+		9F57DCF31360398D00E96DE0 /* TFSelectableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSelectableRow.m; sourceTree = "<group>"; };
+		9F57DCF41360398D00E96DE0 /* TFSelectionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSelectionGroup.h; sourceTree = "<group>"; };
+		9F57DCF51360398D00E96DE0 /* TFSelectionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSelectionGroup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +140,7 @@
 		9F57DC93136038E500E96DE0 /* typefest-objc */ = {
 			isa = PBXGroup;
 			children = (
+				9F57DCB71360392A00E96DE0 /* Class */,
 				9F57DC94136038E500E96DE0 /* Supporting Files */,
 			);
 			path = "typefest-objc";
@@ -129,6 +174,51 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9F57DCB71360392A00E96DE0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				9F57DCB91360393600E96DE0 /* DataSource */,
+				9F57DCB81360392F00E96DE0 /* Collections */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		9F57DCB81360392F00E96DE0 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				9F57DCD41360398300E96DE0 /* TFActiveArray.h */,
+				9F57DCD51360398300E96DE0 /* TFActiveArray.m */,
+				9F57DCD61360398300E96DE0 /* TFActiveCollectionDelegate.h */,
+				9F57DCD71360398300E96DE0 /* TFActiveCollectionInfo.h */,
+				9F57DCD81360398300E96DE0 /* TFActiveCollectionInfo.m */,
+				9F57DCD91360398300E96DE0 /* TFActiveCollectionProtocol.h */,
+				9F57DCDA1360398300E96DE0 /* TFActiveCollectionUtils.h */,
+				9F57DCDB1360398300E96DE0 /* TFActiveCollectionUtils.m */,
+				9F57DCDC1360398300E96DE0 /* TFActiveDictionary.h */,
+				9F57DCDD1360398300E96DE0 /* TFActiveDictionary.m */,
+				9F57DCDE1360398300E96DE0 /* TFActiveSet.h */,
+				9F57DCDF1360398300E96DE0 /* TFActiveSet.m */,
+			);
+			name = Collections;
+			sourceTree = "<group>";
+		};
+		9F57DCB91360393600E96DE0 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				9F57DCEC1360398D00E96DE0 /* TFDataSource.h */,
+				9F57DCED1360398D00E96DE0 /* TFDataSource.m */,
+				9F57DCEE1360398D00E96DE0 /* TFRow.h */,
+				9F57DCEF1360398D00E96DE0 /* TFRow.m */,
+				9F57DCF01360398D00E96DE0 /* TFSection.h */,
+				9F57DCF11360398D00E96DE0 /* TFSection.m */,
+				9F57DCF21360398D00E96DE0 /* TFSelectableRow.h */,
+				9F57DCF31360398D00E96DE0 /* TFSelectableRow.m */,
+				9F57DCF41360398D00E96DE0 /* TFSelectionGroup.h */,
+				9F57DCF51360398D00E96DE0 /* TFSelectionGroup.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -136,6 +226,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F57DCE01360398300E96DE0 /* TFActiveArray.h in Headers */,
+				9F57DCE21360398300E96DE0 /* TFActiveCollectionDelegate.h in Headers */,
+				9F57DCE31360398300E96DE0 /* TFActiveCollectionInfo.h in Headers */,
+				9F57DCE51360398300E96DE0 /* TFActiveCollectionProtocol.h in Headers */,
+				9F57DCE61360398300E96DE0 /* TFActiveCollectionUtils.h in Headers */,
+				9F57DCE81360398300E96DE0 /* TFActiveDictionary.h in Headers */,
+				9F57DCEA1360398300E96DE0 /* TFActiveSet.h in Headers */,
+				9F57DCF61360398D00E96DE0 /* TFDataSource.h in Headers */,
+				9F57DCF81360398D00E96DE0 /* TFRow.h in Headers */,
+				9F57DCFA1360398D00E96DE0 /* TFSection.h in Headers */,
+				9F57DCFC1360398D00E96DE0 /* TFSelectableRow.h in Headers */,
+				9F57DCFE1360398D00E96DE0 /* TFSelectionGroup.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +251,7 @@
 				9F57DC8A136038E500E96DE0 /* Sources */,
 				9F57DC8B136038E500E96DE0 /* Frameworks */,
 				9F57DC8C136038E500E96DE0 /* Headers */,
+				9F57DD06136039FD00E96DE0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -227,6 +330,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		9F57DD06136039FD00E96DE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Version 2.0 (updated for Xcode 4, with some fixes)\n# Changes:\n#    - Works with xcode 4, even when running xcode 3 projects (Workarounds for apple bugs)\n#    - Faster / better: only runs lipo once, instead of once per recursion\n#    - Added some debugging statemetns that can be switched on/off by changing the DEBUG_THIS_SCRIPT variable to \"true\"\n#    - Fixed some typos\n# \n# Purpose:\n#   Create a static library for iPhone from within XCode\n#   Because Apple staff DELIBERATELY broke Xcode to make this impossible from the GUI (Xcode 3.2.3 specifically states this in the Release notes!)\n#   ...no, I don't understand why they did this!\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n# More info: see this Stack Overflow question: http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"false\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\"\nxcodebuild -configuration \"${CONFIGURATION}\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nlipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\n# * needs to be outside the double quotes?\ncp \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include/\"* \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\nfi\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,6 +350,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F57DCE11360398300E96DE0 /* TFActiveArray.m in Sources */,
+				9F57DCE41360398300E96DE0 /* TFActiveCollectionInfo.m in Sources */,
+				9F57DCE71360398300E96DE0 /* TFActiveCollectionUtils.m in Sources */,
+				9F57DCE91360398300E96DE0 /* TFActiveDictionary.m in Sources */,
+				9F57DCEB1360398300E96DE0 /* TFActiveSet.m in Sources */,
+				9F57DCF71360398D00E96DE0 /* TFDataSource.m in Sources */,
+				9F57DCF91360398D00E96DE0 /* TFRow.m in Sources */,
+				9F57DCFB1360398D00E96DE0 /* TFSection.m in Sources */,
+				9F57DCFD1360398D00E96DE0 /* TFSelectableRow.m in Sources */,
+				9F57DCFF1360398D00E96DE0 /* TFSelectionGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
