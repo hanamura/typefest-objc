@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F57DC92136038E500E96DE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F57DC91136038E500E96DE0 /* Foundation.framework */; };
+		9F57DC9D136038E500E96DE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F57DC9C136038E500E96DE0 /* UIKit.framework */; };
+		9F57DC9E136038E500E96DE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F57DC91136038E500E96DE0 /* Foundation.framework */; };
+		9F57DCA0136038E500E96DE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F57DC9F136038E500E96DE0 /* CoreGraphics.framework */; };
+		9F57DCA3136038E500E96DE0 /* libtypefest-objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F57DC8E136038E500E96DE0 /* libtypefest-objc.a */; };
+		9F57DCA9136038E500E96DE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F57DCA7136038E500E96DE0 /* InfoPlist.strings */; };
+		9F57DCAC136038E500E96DE0 /* typefest_objcTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9F57DCAB136038E500E96DE0 /* typefest_objcTests.h */; };
+		9F57DCAE136038E500E96DE0 /* typefest_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCAD136038E500E96DE0 /* typefest_objcTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F57DCA1136038E500E96DE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F57DC85136038E500E96DE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F57DC8D136038E500E96DE0;
+			remoteInfo = "typefest-objc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F57DC8E136038E500E96DE0 /* libtypefest-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libtypefest-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F57DC91136038E500E96DE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9F57DC95136038E500E96DE0 /* typefest-objc-Prefix.pch */ = {isa = PBXFileReference; path = "typefest-objc-Prefix.pch"; sourceTree = "<group>"; };
+		9F57DC9B136038E500E96DE0 /* typefest-objcTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "typefest-objcTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F57DC9C136038E500E96DE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9F57DC9F136038E500E96DE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9F57DCA6136038E500E96DE0 /* typefest-objcTests-Info.plist */ = {isa = PBXFileReference; path = "typefest-objcTests-Info.plist"; sourceTree = "<group>"; };
+		9F57DCA8136038E500E96DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F57DCAA136038E500E96DE0 /* typefest-objcTests-Prefix.pch */ = {isa = PBXFileReference; path = "typefest-objcTests-Prefix.pch"; sourceTree = "<group>"; };
+		9F57DCAB136038E500E96DE0 /* typefest_objcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = typefest_objcTests.h; sourceTree = "<group>"; };
+		9F57DCAD136038E500E96DE0 /* typefest_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = typefest_objcTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F57DC8B136038E500E96DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F57DC92136038E500E96DE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F57DC97136038E500E96DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F57DC9D136038E500E96DE0 /* UIKit.framework in Frameworks */,
+				9F57DC9E136038E500E96DE0 /* Foundation.framework in Frameworks */,
+				9F57DCA0136038E500E96DE0 /* CoreGraphics.framework in Frameworks */,
+				9F57DCA3136038E500E96DE0 /* libtypefest-objc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F57DC83136038E500E96DE0 = {
+			isa = PBXGroup;
+			children = (
+				9F57DC93136038E500E96DE0 /* typefest-objc */,
+				9F57DCA4136038E500E96DE0 /* typefest-objcTests */,
+				9F57DC90136038E500E96DE0 /* Frameworks */,
+				9F57DC8F136038E500E96DE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F57DC8F136038E500E96DE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F57DC8E136038E500E96DE0 /* libtypefest-objc.a */,
+				9F57DC9B136038E500E96DE0 /* typefest-objcTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F57DC90136038E500E96DE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F57DC91136038E500E96DE0 /* Foundation.framework */,
+				9F57DC9C136038E500E96DE0 /* UIKit.framework */,
+				9F57DC9F136038E500E96DE0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F57DC93136038E500E96DE0 /* typefest-objc */ = {
+			isa = PBXGroup;
+			children = (
+				9F57DC94136038E500E96DE0 /* Supporting Files */,
+			);
+			path = "typefest-objc";
+			sourceTree = "<group>";
+		};
+		9F57DC94136038E500E96DE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F57DC95136038E500E96DE0 /* typefest-objc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F57DCA4136038E500E96DE0 /* typefest-objcTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F57DCAB136038E500E96DE0 /* typefest_objcTests.h */,
+				9F57DCAD136038E500E96DE0 /* typefest_objcTests.m */,
+				9F57DCA5136038E500E96DE0 /* Supporting Files */,
+			);
+			path = "typefest-objcTests";
+			sourceTree = "<group>";
+		};
+		9F57DCA5136038E500E96DE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F57DCA6136038E500E96DE0 /* typefest-objcTests-Info.plist */,
+				9F57DCA7136038E500E96DE0 /* InfoPlist.strings */,
+				9F57DCAA136038E500E96DE0 /* typefest-objcTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9F57DC8C136038E500E96DE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9F57DC8D136038E500E96DE0 /* typefest-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F57DCB1136038E600E96DE0 /* Build configuration list for PBXNativeTarget "typefest-objc" */;
+			buildPhases = (
+				9F57DC8A136038E500E96DE0 /* Sources */,
+				9F57DC8B136038E500E96DE0 /* Frameworks */,
+				9F57DC8C136038E500E96DE0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "typefest-objc";
+			productName = "typefest-objc";
+			productReference = 9F57DC8E136038E500E96DE0 /* libtypefest-objc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9F57DC9A136038E500E96DE0 /* typefest-objcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F57DCB4136038E600E96DE0 /* Build configuration list for PBXNativeTarget "typefest-objcTests" */;
+			buildPhases = (
+				9F57DC96136038E500E96DE0 /* Sources */,
+				9F57DC97136038E500E96DE0 /* Frameworks */,
+				9F57DC98136038E500E96DE0 /* Resources */,
+				9F57DC99136038E500E96DE0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F57DCA2136038E500E96DE0 /* PBXTargetDependency */,
+			);
+			name = "typefest-objcTests";
+			productName = "typefest-objcTests";
+			productReference = 9F57DC9B136038E500E96DE0 /* typefest-objcTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F57DC85136038E500E96DE0 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9F57DC88136038E500E96DE0 /* Build configuration list for PBXProject "typefest-objc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9F57DC83136038E500E96DE0;
+			productRefGroup = 9F57DC8F136038E500E96DE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F57DC8D136038E500E96DE0 /* typefest-objc */,
+				9F57DC9A136038E500E96DE0 /* typefest-objcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F57DC98136038E500E96DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F57DCA9136038E500E96DE0 /* InfoPlist.strings in Resources */,
+				9F57DCAC136038E500E96DE0 /* typefest_objcTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F57DC99136038E500E96DE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F57DC8A136038E500E96DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F57DC96136038E500E96DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F57DCAE136038E500E96DE0 /* typefest_objcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F57DCA2136038E500E96DE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F57DC8D136038E500E96DE0 /* typefest-objc */;
+			targetProxy = 9F57DCA1136038E500E96DE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F57DCA7136038E500E96DE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F57DCA8136038E500E96DE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F57DCAF136038E500E96DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F57DCB0136038E500E96DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		9F57DCB2136038E600E96DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/typefest_objc.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "typefest-objc/typefest-objc-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F57DCB3136038E600E96DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/typefest_objc.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "typefest-objc/typefest-objc-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9F57DCB5136038E600E96DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "typefest-objcTests/typefest-objcTests-Prefix.pch";
+				INFOPLIST_FILE = "typefest-objcTests/typefest-objcTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9F57DCB6136038E600E96DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "typefest-objcTests/typefest-objcTests-Prefix.pch";
+				INFOPLIST_FILE = "typefest-objcTests/typefest-objcTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F57DC88136038E500E96DE0 /* Build configuration list for PBXProject "typefest-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F57DCAF136038E500E96DE0 /* Debug */,
+				9F57DCB0136038E500E96DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F57DCB1136038E600E96DE0 /* Build configuration list for PBXNativeTarget "typefest-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F57DCB2136038E600E96DE0 /* Debug */,
+				9F57DCB3136038E600E96DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F57DCB4136038E600E96DE0 /* Build configuration list for PBXNativeTarget "typefest-objcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F57DCB5136038E600E96DE0 /* Debug */,
+				9F57DCB6136038E600E96DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F57DC85136038E500E96DE0 /* Project object */;
+}
