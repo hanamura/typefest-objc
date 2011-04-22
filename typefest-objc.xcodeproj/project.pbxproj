@@ -37,6 +37,10 @@
 		9F57DCFD1360398D00E96DE0 /* TFSelectableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCF31360398D00E96DE0 /* TFSelectableRow.m */; };
 		9F57DCFE1360398D00E96DE0 /* TFSelectionGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DCF41360398D00E96DE0 /* TFSelectionGroup.h */; };
 		9F57DCFF1360398D00E96DE0 /* TFSelectionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DCF51360398D00E96DE0 /* TFSelectionGroup.m */; };
+		9F57DDAD1361680700E96DE0 /* TFTextFieldRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DDAB1361680700E96DE0 /* TFTextFieldRow.h */; };
+		9F57DDAE1361680700E96DE0 /* TFTextFieldRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DDAC1361680700E96DE0 /* TFTextFieldRow.m */; };
+		9F57DDB913616E3100E96DE0 /* TFSwitchRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DDB713616E3000E96DE0 /* TFSwitchRow.h */; };
+		9F57DDBA13616E3100E96DE0 /* TFSwitchRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DDB813616E3100E96DE0 /* TFSwitchRow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		9F57DCF31360398D00E96DE0 /* TFSelectableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSelectableRow.m; sourceTree = "<group>"; };
 		9F57DCF41360398D00E96DE0 /* TFSelectionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSelectionGroup.h; sourceTree = "<group>"; };
 		9F57DCF51360398D00E96DE0 /* TFSelectionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSelectionGroup.m; sourceTree = "<group>"; };
+		9F57DDAB1361680700E96DE0 /* TFTextFieldRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTextFieldRow.h; sourceTree = "<group>"; };
+		9F57DDAC1361680700E96DE0 /* TFTextFieldRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTextFieldRow.m; sourceTree = "<group>"; };
+		9F57DDB713616E3000E96DE0 /* TFSwitchRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSwitchRow.h; sourceTree = "<group>"; };
+		9F57DDB813616E3100E96DE0 /* TFSwitchRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSwitchRow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +223,10 @@
 				9F57DCF31360398D00E96DE0 /* TFSelectableRow.m */,
 				9F57DCF41360398D00E96DE0 /* TFSelectionGroup.h */,
 				9F57DCF51360398D00E96DE0 /* TFSelectionGroup.m */,
+				9F57DDAB1361680700E96DE0 /* TFTextFieldRow.h */,
+				9F57DDAC1361680700E96DE0 /* TFTextFieldRow.m */,
+				9F57DDB713616E3000E96DE0 /* TFSwitchRow.h */,
+				9F57DDB813616E3100E96DE0 /* TFSwitchRow.m */,
 			);
 			name = DataSource;
 			sourceTree = "<group>";
@@ -238,6 +250,8 @@
 				9F57DCFA1360398D00E96DE0 /* TFSection.h in Headers */,
 				9F57DCFC1360398D00E96DE0 /* TFSelectableRow.h in Headers */,
 				9F57DCFE1360398D00E96DE0 /* TFSelectionGroup.h in Headers */,
+				9F57DDAD1361680700E96DE0 /* TFTextFieldRow.h in Headers */,
+				9F57DDB913616E3100E96DE0 /* TFSwitchRow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +374,8 @@
 				9F57DCFB1360398D00E96DE0 /* TFSection.m in Sources */,
 				9F57DCFD1360398D00E96DE0 /* TFSelectableRow.m in Sources */,
 				9F57DCFF1360398D00E96DE0 /* TFSelectionGroup.m in Sources */,
+				9F57DDAE1361680700E96DE0 /* TFTextFieldRow.m in Sources */,
+				9F57DDBA13616E3100E96DE0 /* TFSwitchRow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +521,7 @@
 				9F57DCB3136038E600E96DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F57DCB4136038E600E96DE0 /* Build configuration list for PBXNativeTarget "typefest-objcTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +530,7 @@
 				9F57DCB6136038E600E96DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
