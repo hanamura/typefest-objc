@@ -95,6 +95,9 @@
     
     if (row.selected) {
         for (TFSelectableRow *r in self) {
+            if (![r isKindOfClass:[TFSelectableRow class]]) {
+                continue;
+            }
             if (r != row && r.selected) {
                 r.selected = NO;
                 deselectedRow = r;
