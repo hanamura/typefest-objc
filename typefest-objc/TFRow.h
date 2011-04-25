@@ -22,8 +22,8 @@
 + (id)row;
 + (id)rowWithStyle:(UITableViewCellStyle)style title:(NSString *)title detailTitle:(NSString *)detailTitle reuseIdentifier:(NSString *)reuseIdentifier;
 + (id)rowWithStyle:(UITableViewCellStyle)style title:(NSString *)title detailTitle:(NSString *)detailTitle reuseIdentifier:(NSString *)reuseIdentifier accessoryType:(UITableViewCellAccessoryType)accessoryType target:(id)target action:(SEL)action data:(id)data;
-+ (id)disclosuerRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action;
-+ (id)disclosuerRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action reuseIdentifier:(NSString *)reuseIdentifier;
++ (id)disclosureRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action;
++ (id)disclosureRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action reuseIdentifier:(NSString *)reuseIdentifier;
 + (id)rowWithPrivateCell:(UITableViewCell *)privateCell;
 
 @property (assign) UITableViewCellStyle style;
@@ -45,8 +45,8 @@
 // init
 - (id)initWithStyle:(UITableViewCellStyle)style title:(NSString *)title detailTitle:(NSString *)detailTitle reuseIdentifier:(NSString *)reuseIdentifier;
 - (id)initWithStyle:(UITableViewCellStyle)style title:(NSString *)title detailTitle:(NSString *)detailTitle reuseIdentifier:(NSString *)reuseIdentifier accessoryType:(UITableViewCellAccessoryType)accessoryType target:(id)target action:(SEL)action data:(id)data;
-- (id)initDisclosuerWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action;
-- (id)initDisclosuerWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action reuseIdentifier:(NSString *)reuseIdentifier;
+- (id)initDisclosureWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action;
+- (id)initDisclosureWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action reuseIdentifier:(NSString *)reuseIdentifier;
 - (id)initWithPrivateCell:(UITableViewCell *)privateCell;
 
 // responsibility

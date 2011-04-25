@@ -21,14 +21,14 @@
     return [[[TFRow alloc] initWithStyle:style title:title detailTitle:detailTitle reuseIdentifier:reuseIdentifier accessoryType:accessoryType target:target action:action data:data] autorelease];
 }
 
-+ (id)disclosuerRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action
++ (id)disclosureRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action
 {
-    return [[[TFRow alloc] initDisclosuerWithTitle:title detailTitle:detailTitle target:target action:action] autorelease];
+    return [[[TFRow alloc] initDisclosureWithTitle:title detailTitle:detailTitle target:target action:action] autorelease];
 }
 
-+ (id)disclosuerRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action reuseIdentifier:(NSString *)reuseIdentifier
++ (id)disclosureRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action reuseIdentifier:(NSString *)reuseIdentifier
 {
-    return [[[TFRow alloc] initDisclosuerWithTitle:title detailTitle:detailTitle target:target action:action reuseIdentifier:reuseIdentifier] autorelease];
+    return [[[TFRow alloc] initDisclosureWithTitle:title detailTitle:detailTitle target:target action:action reuseIdentifier:reuseIdentifier] autorelease];
 }
 
 + (id)rowWithPrivateCell:(UITableViewCell *)privateCell
@@ -88,12 +88,12 @@
     return self;
 }
 
-- (id)initDisclosuerWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action
+- (id)initDisclosureWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action
 {
-    return [self initDisclosuerWithTitle:title detailTitle:detailTitle target:target action:action reuseIdentifier:NSStringFromClass([self class])];
+    return [self initDisclosureWithTitle:title detailTitle:detailTitle target:target action:action reuseIdentifier:NSStringFromClass([self class])];
 }
 
-- (id)initDisclosuerWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action reuseIdentifier:(NSString *)reuseIdentifier
+- (id)initDisclosureWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [self init];
     if (self) {

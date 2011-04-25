@@ -17,14 +17,14 @@
     return [[[TFSelectableRow alloc] initWithStyle:style title:title detailTitle:detailTitle reuseIdentifier:reuseIdentifier accessoryType:accessoryType target:target action:action data:data] autorelease];
 }
 
-+ (id)disclosuerRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action
++ (id)disclosureRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action
 {
-    return [[[TFSelectableRow alloc] initDisclosuerWithTitle:title detailTitle:detailTitle target:target action:action] autorelease];
+    return [[[TFSelectableRow alloc] initDisclosureWithTitle:title detailTitle:detailTitle target:target action:action] autorelease];
 }
 
-+ (id)disclosuerRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action reuseIdentifier:(NSString *)reuseIdentifier
++ (id)disclosureRowWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action reuseIdentifier:(NSString *)reuseIdentifier
 {
-    return [[[TFSelectableRow alloc] initDisclosuerWithTitle:title detailTitle:detailTitle target:target action:action reuseIdentifier:reuseIdentifier] autorelease];
+    return [[[TFSelectableRow alloc] initDisclosureWithTitle:title detailTitle:detailTitle target:target action:action reuseIdentifier:reuseIdentifier] autorelease];
 }
 
 + (id)rowWithPrivateCell:(UITableViewCell *)privateCell
