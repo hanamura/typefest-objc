@@ -42,6 +42,22 @@
     return [[[TFSelectableRow alloc] initWithTitle:title data:data selected:selected target:target action:actions] autorelease];
 }
 
++ (void)selectCell:(UITableViewCell *)cell
+{
+    [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+    [[cell textLabel] setTextColor:[UIColor
+                                    colorWithRed:0x38 / (float)0xff
+                                    green:0x54 / (float)0xff
+                                    blue:0x87 / (float)0xff
+                                    alpha:1.0]];
+}
+
++ (void)deselectCell:(UITableViewCell *)cell
+{
+    [cell setAccessoryType:UITableViewCellAccessoryNone];
+    [[cell textLabel] setTextColor:[UIColor darkTextColor]];
+}
+
 @synthesize selected=_selected;
 @synthesize autoSelect=_autoSelect;
 @synthesize autoDeselect=_autoDeselect;
@@ -114,10 +130,13 @@
 // overrides
 - (void)setupCell:(UITableViewCell *)cell
 {
-    cell.textLabel.text = _title;
-    cell.detailTextLabel.text = _detailTitle;
-    cell.accessoryType = _selected ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
-    cell.accessoryView = _accessoryView;
+    [super setupCell:cell];
+    
+    if (_selected) {
+        [TFSelectableRow selectCell:cell];
+    } else {
+        [TFSelectableRow deselectCell:cell];
+    }
 }
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath

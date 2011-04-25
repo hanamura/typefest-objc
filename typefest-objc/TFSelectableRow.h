@@ -12,6 +12,8 @@
 
 + (id)rowWithTitle:(NSString *)title data:(id)data selected:(BOOL)selected;
 + (id)rowWithTitle:(NSString *)title data:(id)data selected:(BOOL)selected target:(id)target action:(SEL)action;
++ (void)selectCell:(UITableViewCell *)cell;
++ (void)deselectCell:(UITableViewCell *)cell;
 
 @property (nonatomic, assign) BOOL selected;
 @property (nonatomic, readonly) NSMutableArray *delegates;
