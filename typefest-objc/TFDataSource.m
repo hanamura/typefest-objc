@@ -251,15 +251,15 @@
     return [[self objectAtIndex:section] tableView:tableView viewForFooterInSection:section];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return [[self objectAtIndex:section] tableView:tableView heightForHeaderInSection:section];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return [[self objectAtIndex:section] tableView:tableView heightForFooterInSection:section];
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+//{
+//    return [[self objectAtIndex:section] tableView:tableView heightForHeaderInSection:section];
+//}
+//
+//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+//{
+//    return [[self objectAtIndex:section] tableView:tableView heightForFooterInSection:section];
+//}
 
 - (void)tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath
 {
