@@ -212,11 +212,11 @@
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         if ([_editingTarget respondsToSelector:_editingDeleteAction]) {
-            [_editingTarget performSelector:_editingDeleteAction withObject:tableView withObject:indexPath];
+            [_editingTarget performSelector:_editingDeleteAction withObject:self];
         }
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         if ([_editingTarget respondsToSelector:_editingInsertAction]) {
-            [_editingTarget performSelector:_editingInsertAction withObject:tableView withObject:indexPath];
+            [_editingTarget performSelector:_editingInsertAction withObject:self];
         }
     }
 }
