@@ -46,6 +46,9 @@
 @synthesize action=_action;
 @synthesize accessoryTarget=_accessoryTarget;
 @synthesize accessoryAction=_accessoryAction;
+@synthesize editingTarget=_editingTarget;
+@synthesize editingDeleteAction=_editingDeleteAction;
+@synthesize editingInsertAction=_editingInsertAction;
 @synthesize data=_data;
 @synthesize privateCell=_privateCell;
 @synthesize editable=_editable;
@@ -157,6 +160,9 @@
     row.action = _action;
     row.accessoryTarget = _accessoryTarget;
     row.accessoryAction = _accessoryAction;
+    row.editingTarget = _editingTarget;
+    row.editingDeleteAction = _editingDeleteAction;
+    row.editingInsertAction = _editingInsertAction;
     row.data = _data;
     row.editable = _editable;
     row.movable = _movable;
@@ -196,6 +202,23 @@
     cell.accessoryType = _accessoryType;
     cell.accessoryView = _accessoryView;
     cell.showsReorderControl = _movable;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (!_editingTarget) {
+        return;
+    }
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        if ([_editingTarget respondsToSelector:_editingDeleteAction]) {
+            [_editingTarget performSelector:_editingDeleteAction withObject:tableView withObject:indexPath];
+        }
+    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        if ([_editingTarget respondsToSelector:_editingInsertAction]) {
+            [_editingTarget performSelector:_editingInsertAction withObject:tableView withObject:indexPath];
+        }
+    }
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

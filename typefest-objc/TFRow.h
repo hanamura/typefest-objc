@@ -12,6 +12,9 @@
     SEL _action;
     id _accessoryTarget;
     SEL _accessoryAction;
+    id _editingTarget;
+    SEL _editingDeleteAction;
+    SEL _editingInsertAction;
     id _data;
     UITableViewCell *_privateCell;
     BOOL _editable;
@@ -36,6 +39,9 @@
 @property (assign) SEL action;
 @property (nonatomic, assign) id accessoryTarget;
 @property (assign) SEL accessoryAction;
+@property (nonatomic, assign) id editingTarget;
+@property (assign) SEL editingDeleteAction;
+@property (assign) SEL editingInsertAction;
 @property (nonatomic, retain) id data;
 @property (nonatomic, retain) UITableViewCell *privateCell;
 @property (assign) BOOL editable;
@@ -55,6 +61,7 @@
 
 // UITableViewDataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath;
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath;
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath;
 
