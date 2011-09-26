@@ -15,6 +15,7 @@
         self.title = title;
         self.reuseIdentifier = reuseIdentifier;
         self.privateCell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier] autorelease];
+        self.privateCell.textLabel.textAlignment = UITextAlignmentCenter;
         self.target = target;
         self.action = action;
     }
