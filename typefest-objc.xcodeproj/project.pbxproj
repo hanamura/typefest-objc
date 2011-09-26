@@ -41,6 +41,8 @@
 		9F57DDAE1361680700E96DE0 /* TFTextFieldRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DDAC1361680700E96DE0 /* TFTextFieldRow.m */; };
 		9F57DDB913616E3100E96DE0 /* TFSwitchRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F57DDB713616E3000E96DE0 /* TFSwitchRow.h */; };
 		9F57DDBA13616E3100E96DE0 /* TFSwitchRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F57DDB813616E3100E96DE0 /* TFSwitchRow.m */; };
+		9F91040E1430561C00C01E3D /* TFSliderRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F91040C1430561C00C01E3D /* TFSliderRow.h */; };
+		9F91040F1430561C00C01E3D /* TFSliderRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F91040D1430561C00C01E3D /* TFSliderRow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		9F57DDAC1361680700E96DE0 /* TFTextFieldRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTextFieldRow.m; sourceTree = "<group>"; };
 		9F57DDB713616E3000E96DE0 /* TFSwitchRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSwitchRow.h; sourceTree = "<group>"; };
 		9F57DDB813616E3100E96DE0 /* TFSwitchRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSwitchRow.m; sourceTree = "<group>"; };
+		9F91040C1430561C00C01E3D /* TFSliderRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSliderRow.h; sourceTree = "<group>"; };
+		9F91040D1430561C00C01E3D /* TFSliderRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSliderRow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +231,8 @@
 				9F57DDAC1361680700E96DE0 /* TFTextFieldRow.m */,
 				9F57DDB713616E3000E96DE0 /* TFSwitchRow.h */,
 				9F57DDB813616E3100E96DE0 /* TFSwitchRow.m */,
+				9F91040C1430561C00C01E3D /* TFSliderRow.h */,
+				9F91040D1430561C00C01E3D /* TFSliderRow.m */,
 			);
 			name = DataSource;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				9F57DCFE1360398D00E96DE0 /* TFSelectionGroup.h in Headers */,
 				9F57DDAD1361680700E96DE0 /* TFTextFieldRow.h in Headers */,
 				9F57DDB913616E3100E96DE0 /* TFSwitchRow.h in Headers */,
+				9F91040E1430561C00C01E3D /* TFSliderRow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +369,7 @@
 				9F57DCFF1360398D00E96DE0 /* TFSelectionGroup.m in Sources */,
 				9F57DDAE1361680700E96DE0 /* TFTextFieldRow.m in Sources */,
 				9F57DDBA13616E3100E96DE0 /* TFSwitchRow.m in Sources */,
+				9F91040F1430561C00C01E3D /* TFSliderRow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
