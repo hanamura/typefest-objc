@@ -146,8 +146,12 @@
     if (_notificationEnabled &&
         (_notificationDepth < 0 || info.depth <= _notificationDepth))
     {
-        for (id delegate in _delegates) {
-            if ([delegate respondsToSelector:@selector(objectDidChange:info:)]) {
+        NSArray *delegates = [NSArray arrayWithArray:_delegates];
+        
+        for (id delegate in delegates) {
+            if ([_delegates containsObject:delegate] &&
+                [delegate respondsToSelector:@selector(objectDidChange:info:)])
+            {
                 [delegate performSelector:@selector(objectDidChange:info:)
                                withObject:self withObject:info];
             }
