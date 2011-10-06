@@ -18,6 +18,7 @@
 
 @synthesize notificationEnabled=_notificationEnabled;
 @synthesize notificationDepth=_notificationDepth;
+@synthesize delegates=_delegates;
 
 // init/dealloc
 - (id)init
@@ -28,7 +29,7 @@
         
         _notificationEnabled = YES;
         _notificationDepth = 0;
-        _delegates = nil;
+        _delegates = [[TFActiveCollectionUtils nonRetainingArray] retain];
     }
     return self;
 }
@@ -39,18 +40,11 @@
         [self removeObserverFromObject:object];
     }
     [_storage release];
+    _storage = nil;
     [_delegates release];
+    _delegates = nil;
     
     [super dealloc];
-}
-
-// delegates
-- (NSMutableArray *)delegates
-{
-    if (!_delegates) {
-        _delegates = [[TFActiveCollectionUtils nonRetainingArray] retain];
-    }
-    return _delegates;
 }
 
 // NSDictionary
@@ -141,17 +135,13 @@
 
 - (void)postNotification:(TFActiveCollectionInfo *)info
 {
-    if (_notificationEnabled &&
-        (_notificationDepth < 0 || info.depth <= _notificationDepth))
-    {
-        NSArray *delegates = [NSArray arrayWithArray:_delegates];
-        
-        for (id delegate in delegates) {
-            if ([_delegates containsObject:delegate] &&
-                [delegate respondsToSelector:@selector(objectDidChange:info:)])
-            {
-                [delegate performSelector:@selector(objectDidChange:info:)
-                               withObject:self withObject:info];
+    if (_notificationEnabled && (_notificationDepth < 0 || info.depth <= _notificationDepth)) {
+        for (id delegate in [NSArray arrayWithArray:_delegates]) {
+            if (!_delegates) {
+                return;
+            }
+            if ([_delegates containsObject:delegate] && [delegate respondsToSelector:@selector(objectDidChange:info:)]) {
+                [delegate performSelector:@selector(objectDidChange:info:) withObject:self withObject:info];
             }
         }
     }
