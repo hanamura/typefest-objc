@@ -40,9 +40,7 @@
         [self removeObserverFromObject:object];
     }
     [_storage release];
-    _storage = nil;
     [_delegates release];
-    _delegates = nil;
     
     [super dealloc];
 }
@@ -135,16 +133,17 @@
 
 - (void)postNotification:(TFActiveCollectionInfo *)info
 {
+    [self retain];
+    
     if (_notificationEnabled && (_notificationDepth < 0 || info.depth <= _notificationDepth)) {
         for (id delegate in [NSArray arrayWithArray:_delegates]) {
-            if (!_delegates) {
-                return;
-            }
             if ([_delegates containsObject:delegate] && [delegate respondsToSelector:@selector(objectDidChange:info:)]) {
                 [delegate performSelector:@selector(objectDidChange:info:) withObject:self withObject:info];
             }
         }
     }
+    
+    [self release];
 }
 
 @end
