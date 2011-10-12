@@ -112,12 +112,15 @@
         [self addObserverToObject:r];
     }
     
-    for (id delegate in _groupDelegates) {
-        if ([delegate respondsToSelector:@selector(selectionChanged:deselectedRow:)]) {
-            [delegate performSelector:@selector(selectionChanged:deselectedRow:)
-                           withObject:self withObject:deselectedRow];
+    [self retain];
+    
+    for (id delegate in [NSArray arrayWithArray:_groupDelegates]) {
+        if ([_groupDelegates containsObject:delegate] && [delegate respondsToSelector:@selector(selectionChanged:deselectedRow:)]) {
+            [delegate performSelector:@selector(selectionChanged:deselectedRow:) withObject:self withObject:deselectedRow];
         }
     }
+    
+    [self release];
 }
 
 @end

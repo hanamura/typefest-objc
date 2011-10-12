@@ -46,9 +46,9 @@
 {
     [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
     [[cell textLabel] setTextColor:[UIColor
-                                    colorWithRed:0x38 / (float)0xff
-                                    green:0x54 / (float)0xff
-                                    blue:0x87 / (float)0xff
+                                    colorWithRed:0x38 / 255.0f
+                                    green:0x54 / 255.0f
+                                    blue:0x87 / 255.0f
                                     alpha:1.0]];
 }
 
@@ -61,6 +61,7 @@
 @synthesize selected=_selected;
 @synthesize autoSelect=_autoSelect;
 @synthesize autoDeselect=_autoDeselect;
+@synthesize delegates=_delegates;
 
 // init/dealloc
 - (id)init
@@ -70,6 +71,7 @@
         _selected = NO;
         _autoSelect = YES;
         _autoDeselect = NO;
+        _delegates = [[TFActiveCollectionUtils nonRetainingArray] retain];
     }
     return self;
 }
@@ -110,22 +112,17 @@
     if (_selected != selected) {
         _selected = selected;
         
-        for (id delegate in _delegates) {
-            if ([delegate respondsToSelector:@selector(selectionChanged:)]) {
+        [self retain];
+        
+        for (id delegate in [NSArray arrayWithArray:_delegates]) {
+            if ([_delegates containsObject:delegate] && [delegate respondsToSelector:@selector(selectionChanged:)]) {
                 [delegate performSelector:@selector(selectionChanged:) withObject:self];
             }
         }
+        
+        [self release];
     }
 }
-
-- (NSMutableArray *)delegates
-{
-    if (!_delegates) {
-        _delegates = [[TFActiveCollectionUtils nonRetainingArray] retain];
-    }
-    return _delegates;
-}
-
 
 // overrides
 - (void)setupCell:(UITableViewCell *)cell
