@@ -1,13 +1,9 @@
 #import "TFActiveSet.h"
 #import "TFActiveCollectionUtils.h"
 
-@interface TFActiveSet ()
-- (void)addObserverToObject:(id)object;
-- (void)removeObserverFromObject:(id)object;
-- (void)setDidChange:(id)added removed:(id)removed;
-- (void)postNotification:(TFActiveCollectionInfo *)info;
-@end
 
+
+// TFActiveSet
 @implementation TFActiveSet
 
 + (id)set
@@ -91,12 +87,13 @@
 }
 
 // events
-- (void)objectDidChange:(id<TFActiveCollectionProtocol>)sender
-                   info:(TFActiveCollectionInfo *)info
+- (void)objectDidChange:(id<TFActiveCollectionProtocol>)sender info:(TFActiveCollectionInfo *)info
 {
-    info = [info copy];
-    info.depth++;
-    [self postNotification:info];
+    if ([self containsObject:sender]) {
+        info = [[info copy] autorelease];
+        info.depth++;
+        [self postNotification:info];
+    }
 }
 
 - (void)setDidChange:(id)added removed:(id)removed

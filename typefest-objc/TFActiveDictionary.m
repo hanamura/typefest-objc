@@ -2,13 +2,9 @@
 #import "TFActiveCollectionUtils.h"
 #import "TFActiveCollectionInfo.h"
 
-@interface TFActiveDictionary ()
-- (void)addObserverToObject:(id)object;
-- (void)removeObserverFromObject:(id)object;
-- (void)dictionaryDidChange:(id)key prev:(id)prev;
-- (void)postNotification:(TFActiveCollectionInfo *)info;
-@end
 
+
+// TFActiveDictionary
 @implementation TFActiveDictionary
 
 + (id)dictionary
@@ -94,10 +90,9 @@
 }
 
 // events
-- (void)objectDidChange:(id<TFActiveCollectionProtocol>)sender
-                   info:(TFActiveCollectionInfo *)info
+- (void)objectDidChange:(id<TFActiveCollectionProtocol>)sender info:(TFActiveCollectionInfo *)info
 {
-    info = [info copy];
+    info = [[info copy] autorelease];
     info.depth++;
     [self postNotification:info];
 }

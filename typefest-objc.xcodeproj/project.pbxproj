@@ -313,6 +313,9 @@
 /* Begin PBXProject section */
 		9F57DC85136038E500E96DE0 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 9F57DC88136038E500E96DE0 /* Build configuration list for PBXProject "typefest-objc" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -447,6 +450,7 @@
 				DSTROOT = /tmp/typefest_objc.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "typefest-objc/typefest-objc-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -459,6 +463,7 @@
 				DSTROOT = /tmp/typefest_objc.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "typefest-objc/typefest-objc-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -474,6 +479,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "typefest-objcTests/typefest-objcTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "typefest-objcTests/typefest-objcTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -494,6 +500,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "typefest-objcTests/typefest-objcTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "typefest-objcTests/typefest-objcTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",

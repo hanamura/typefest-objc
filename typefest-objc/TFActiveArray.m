@@ -108,11 +108,10 @@
 }
 
 // events
-- (void)objectDidChange:(id<TFActiveCollectionProtocol>)sender
-                   info:(TFActiveCollectionInfo *)info
+- (void)objectDidChange:(id<TFActiveCollectionProtocol>)sender info:(TFActiveCollectionInfo *)info
 {
     if ([self containsObject:sender]) {
-        info = [info copy];
+        info = [[info copy] autorelease];
         info.depth++;
         [self postNotification:info];
     }
