@@ -1,6 +1,8 @@
 #import <Foundation/Foundation.h>
 #import "TFActiveCollectionProtocol.h"
 
+
+
 // TFActiveCollectionInfo
 @interface TFActiveCollectionInfo : NSObject <NSCopying>
 {
@@ -9,15 +11,13 @@
     NSInteger _depth;
 }
 
-+ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth;
++ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth;
 
 @property (nonatomic, retain) id<TFActiveCollectionProtocol> source;
 @property (nonatomic, retain) NSString *type;
 @property (assign) NSInteger depth;
 
-- (id)initWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth;
+- (id)initWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth;
 - (id)copyWithZone:(NSZone *)zone;
 
 @end
@@ -34,19 +34,13 @@ extern NSString * const TFActiveArrayInfoChange;
     id _removed;
 }
 
-+ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-               index:(NSUInteger)index
-               added:(id)added removed:(id)removed;
++ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth index:(NSUInteger)index added:(id)added removed:(id)removed;
 
 @property (assign) NSUInteger index;
 @property (nonatomic, retain) id added;
 @property (nonatomic, retain) id removed;
 
-- (id)initWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-               index:(NSUInteger)index
-               added:(id)added removed:(id)removed;
+- (id)initWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth index:(NSUInteger)index added:(id)added removed:(id)removed;
 
 @end
 
@@ -64,17 +58,13 @@ extern NSString * const TFActiveDictionaryInfoRemove;
     id _curr;
 }
 
-+ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-                 key:(id)key prev:(id)prev curr:(id)curr;
++ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth key:(id)key prev:(id)prev curr:(id)curr;
 
 @property (nonatomic, retain) id key;
 @property (nonatomic, retain) id prev;
 @property (nonatomic, retain) id curr;
 
-- (id)initWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-                 key:(id)key prev:(id)prev curr:(id)curr;
+- (id)initWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth key:(id)key prev:(id)prev curr:(id)curr;
 
 @end
 
@@ -90,15 +80,11 @@ extern NSString * const TFActiveSetInfoRemove;
     id _removed;
 }
 
-+ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-               added:(id)added removed:(id)removed;
++ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth added:(id)added removed:(id)removed;
 
 @property (nonatomic, retain) id added;
 @property (nonatomic, retain) id removed;
 
-- (id)initWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-               added:(id)added removed:(id)removed;
+- (id)initWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth added:(id)added removed:(id)removed;
 
 @end

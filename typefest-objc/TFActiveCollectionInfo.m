@@ -1,23 +1,20 @@
 #import "TFActiveCollectionInfo.h"
 
+
+
 // TFActiveCollectionInfo
 @implementation TFActiveCollectionInfo
 
-+ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
++ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth
 {
-    return [[[TFActiveCollectionInfo alloc]
-             initWithSource:source
-             type:type
-             depth:depth] autorelease];
+    return [[[TFActiveCollectionInfo alloc] initWithSource:source type:type depth:depth] autorelease];
 }
 
 @synthesize source=_source;
 @synthesize type=_type;
 @synthesize depth=_depth;
 
-- (id)initWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
+- (id)initWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth
 {
     self = [super init];
     if (self) {
@@ -37,10 +34,7 @@
 
 - (id)copyWithZone:(NSZone *)zone
 {
-    TFActiveCollectionInfo *info = [[[self class] allocWithZone:zone]
-                                    initWithSource:_source
-                                    type:_type
-                                    depth:_depth];
+    TFActiveCollectionInfo *info = [[[self class] allocWithZone:zone] initWithSource:_source type:_type depth:_depth];
     return info;
 }
 
@@ -53,26 +47,16 @@
 
 NSString * const TFActiveArrayInfoChange = @"change";
 
-+ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-               index:(NSUInteger)index added:(id)added removed:(id)removed
++ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth index:(NSUInteger)index added:(id)added removed:(id)removed
 {
-    return [[[TFActiveArrayInfo alloc]
-             initWithSource:source
-             type:type
-             depth:depth
-             index:index
-             added:added
-             removed:removed] autorelease];
+    return [[[TFActiveArrayInfo alloc] initWithSource:source type:type depth:depth index:index added:added removed:removed] autorelease];
 }
 
 @synthesize index=_index;
 @synthesize added=_added;
 @synthesize removed=_removed;
 
-- (id)initWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-               index:(NSUInteger)index added:(id)added removed:(id)removed
+- (id)initWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth index:(NSUInteger)index added:(id)added removed:(id)removed
 {
     self = [super initWithSource:source type:type depth:depth];
     if (self) {
@@ -110,26 +94,16 @@ NSString * const TFActiveDictionaryInfoSet = @"set";
 NSString * const TFActiveDictionaryInfoChange = @"change";
 NSString * const TFActiveDictionaryInfoRemove = @"remove";
 
-+ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-                 key:(id)key prev:(id)prev curr:(id)curr
++ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth key:(id)key prev:(id)prev curr:(id)curr
 {
-    return [[[TFActiveDictionaryInfo alloc]
-             initWithSource:source
-             type:type
-             depth:depth
-             key:key
-             prev:prev
-             curr:curr] autorelease];
+    return [[[TFActiveDictionaryInfo alloc] initWithSource:source type:type depth:depth key:key prev:prev curr:curr] autorelease];
 }
 
 @synthesize key=_key;
 @synthesize prev=_prev;
 @synthesize curr=_curr;
 
-- (id)initWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-                 key:(id)key prev:(id)prev curr:(id)curr
+- (id)initWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth key:(id)key prev:(id)prev curr:(id)curr
 {
     self = [super initWithSource:source type:type depth:depth];
     if (self) {
@@ -167,24 +141,15 @@ NSString * const TFActiveDictionaryInfoRemove = @"remove";
 NSString * const TFActiveSetInfoAdd = @"add";
 NSString * const TFActiveSetInfoRemove = @"remove";
 
-+ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-               added:(id)added removed:(id)removed
++ (id)infoWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth added:(id)added removed:(id)removed
 {
-    return [[[TFActiveSetInfo alloc]
-             initWithSource:source
-             type:type
-             depth:depth
-             added:added
-             removed:removed] autorelease];
+    return [[[TFActiveSetInfo alloc] initWithSource:source type:type depth:depth added:added removed:removed] autorelease];
 }
 
 @synthesize added=_added;
 @synthesize removed=_removed;
 
-- (id)initWithSource:(id<TFActiveCollectionProtocol>)source
-                type:(NSString *)type depth:(NSInteger)depth
-               added:(id)added removed:(id)removed
+- (id)initWithSource:(id<TFActiveCollectionProtocol>)source type:(NSString *)type depth:(NSInteger)depth added:(id)added removed:(id)removed
 {
     self = [super initWithSource:source type:type depth:depth];
     if (self) {

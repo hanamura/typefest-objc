@@ -2,13 +2,9 @@
 #import "TFActiveCollectionInfo.h"
 #import "TFActiveCollectionUtils.h"
 
-@interface TFActiveArray ()
-- (void)addObserverToObject:(id)object;
-- (void)removeObserverFromObject:(id)object;
-- (void)arrayDidChange:(NSUInteger)index added:(id)added removed:(id)removed;
-- (void)postNotification:(TFActiveCollectionInfo *)info;
-@end
 
+
+// TFActiveArray
 @implementation TFActiveArray
 
 + (id)array

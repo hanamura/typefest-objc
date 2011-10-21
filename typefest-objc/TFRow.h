@@ -1,5 +1,8 @@
 #import <UIKit/UIKit.h>
 
+
+
+// TFRow
 @interface TFRow : NSObject <NSCopying>
 {
     UITableViewCellStyle _style;
@@ -54,6 +57,9 @@
 - (id)initDisclosureWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action;
 - (id)initDisclosureWithTitle:(NSString *)title detailTitle:(NSString *)detailTitle target:(id)target action:(SEL)action reuseIdentifier:(NSString *)reuseIdentifier;
 - (id)initWithPrivateCell:(UITableViewCell *)privateCell;
+
+// private
+- (void)setupCell:(UITableViewCell *)cell;
 
 // responsibility
 - (BOOL)isResponsibleToAction;

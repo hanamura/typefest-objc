@@ -1,9 +1,8 @@
 #import "TFRow.h"
 
-@interface TFRow ()
-- (void)setupCell:(UITableViewCell *)cell;
-@end
 
+
+// TFRow
 @implementation TFRow
 
 + (id)row
