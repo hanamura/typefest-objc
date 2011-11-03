@@ -91,7 +91,7 @@
         [self removeObserverFromObject:r];
     }
     
-    TFSelectableRow *deselectedRow;
+    TFSelectableRow *deselectedRow = nil;
     
     if (row.selected) {
         for (TFSelectableRow *r in self) {
